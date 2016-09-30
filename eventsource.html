@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('eventsource',{
+        category: 'input',
+        color: '#a6bbcf',
+        defaults: {
+            name: { value:"" },
+            url: { value: "", required: true }
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "file.png",
+        label: function() {
+        	return this.name || "Event Source";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="eventsource">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> URL</label>
+        <input type="text" id="node-input-url" placeholder="URL">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="eventsource">
+    <p>Use a HTTP Eventsource as an input</p>
+</script>
