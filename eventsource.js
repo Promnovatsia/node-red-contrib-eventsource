@@ -14,7 +14,7 @@ module.exports = function(RED) {
       });
 
       es.addEventListener("open", function() {
-        context.status({ fill: "green", shape: "ring", text: "Connected" });  
+        context.status({ fill: "green", shape: "dot", text: "Connected" });  
       });
 
       es.addEventListener("message", function(msg) {
