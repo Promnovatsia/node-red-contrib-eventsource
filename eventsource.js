@@ -17,7 +17,7 @@ module.exports = function(RED) {
         context.status({ fill: "green", shape: "dot", text: "Connected" });  
       });
 
-      es.addEventListener("message", function(msg) {
+      es.addEventListener(config.event_name, function(msg) {
         var payload = msg.data;
         try {
           payload = JSON.parse(msg.data);

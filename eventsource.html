@@ -4,7 +4,8 @@
         color: '#a6bbcf',
         defaults: {
             name: { value:"" },
-            url: { value: "", required: true }
+            url: { value: "", required: true },
+			event_name: { value: "message", required: true }
         },
         inputs: 0,
         outputs: 1,
@@ -20,7 +21,10 @@
         <label for="node-input-name"><i class="icon-tag"></i> URL</label>
         <input type="text" id="node-input-url" placeholder="URL">
     </div>
-
+	<div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Event name</label>
+        <input type="text" id="node-input-event_name" placeholder="EventName">
+    </div>
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
