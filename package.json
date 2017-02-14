@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-eventsource",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "User a HTTP eventsource as an input",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
