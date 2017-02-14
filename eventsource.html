@@ -3,15 +3,15 @@
         category: 'input',
         color: '#a6bbcf',
         defaults: {
-            name: { value:"" },
-            url: { value: "", required: true },
-			event_name: { value: "message", required: true }
+          name: { value:"" },
+          url: { value: "", required: true },
+          event_name: { value: "message", required: true }
         },
         inputs: 0,
         outputs: 1,
         icon: "file.png",
         label: function() {
-        	return this.name || "Event Source";
+          return this.name || "Event Source";
         }
     });
 </script>
@@ -21,7 +21,7 @@
         <label for="node-input-name"><i class="icon-tag"></i> URL</label>
         <input type="text" id="node-input-url" placeholder="URL">
     </div>
-	<div class="form-row">
+  <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Event name</label>
         <input type="text" id="node-input-event_name" placeholder="EventName">
     </div>
